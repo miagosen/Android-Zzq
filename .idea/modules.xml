@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidStudioProjects.iml" filepath="$PROJECT_DIR$/AndroidStudioProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-compat-v7-lib/android-compat-v7-lib.iml" filepath="$PROJECT_DIR$/android-compat-v7-lib/android-compat-v7-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imalibpulltorefresh/imalibpulltorefresh.iml" filepath="$PROJECT_DIR$/imalibpulltorefresh/imalibpulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imalibviewpagerindicator/imalibviewpagerindicator.iml" filepath="$PROJECT_DIR$/imalibviewpagerindicator/imalibviewpagerindicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zzq/zzq.iml" filepath="$PROJECT_DIR$/zzq/zzq.iml" />
+    </modules>
+  </component>
+</project>
+

@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 16
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        applicationId "com.zzq.draw"
+        minSdkVersion 14
+        targetSdkVersion 15
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':imalibpulltorefresh')
+    compile project(':imalibviewpagerindicator')
+    compile project(':android-compat-v7-lib')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">可图可乐</string>
+    <string name="menu_settings">Settings</string>
+    <string name="fragment_title_news">最新动态</string>
+    <string name="fragment_title_question">问答</string>
+    <string name="fragment_title_events">活动</string>
+    <string name="loading">加载中…</string>
+    <string name="loading_no_more">没有更多数据.</string>
+    
+    <string name="empty" />
+
+</resources>

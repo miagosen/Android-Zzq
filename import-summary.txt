@@ -1,0 +1,392 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From Zzq:
+* .DS_Store
+* Zzq.iml
+* ic_launcher-web.png
+* proguard-project.txt
+From ima-lib-pulltorefresh:
+* LICENSE
+* android-pulltorefresh-lib.iml
+* build.gradle
+* build/
+* build/generated/
+* build/generated/source/
+* build/generated/source/buildConfig/
+* build/generated/source/buildConfig/release/
+* build/generated/source/buildConfig/release/com/
+* build/generated/source/buildConfig/release/com/handmark/
+* build/generated/source/buildConfig/release/com/handmark/pulltorefresh/
+* build/generated/source/buildConfig/release/com/handmark/pulltorefresh/library/
+* build/generated/source/buildConfig/release/com/handmark/pulltorefresh/library/BuildConfig.java
+* build/generated/source/r/
+* build/generated/source/r/release/
+* build/generated/source/r/release/com/
+* build/generated/source/r/release/com/handmark/
+* build/generated/source/r/release/com/handmark/pulltorefresh/
+* build/generated/source/r/release/com/handmark/pulltorefresh/library/
+* build/generated/source/r/release/com/handmark/pulltorefresh/library/R.java
+* build/intermediates/
+* build/intermediates/bundles/
+* build/intermediates/bundles/release/
+* build/intermediates/bundles/release/AndroidManifest.xml
+* build/intermediates/bundles/release/R.txt
+* build/intermediates/bundles/release/classes.jar
+* build/intermediates/bundles/release/res/
+* build/intermediates/bundles/release/res/anim/
+* build/intermediates/bundles/release/res/anim/slide_in_from_bottom.xml
+* build/intermediates/bundles/release/res/anim/slide_in_from_top.xml
+* build/intermediates/bundles/release/res/anim/slide_out_to_bottom.xml
+* build/intermediates/bundles/release/res/anim/slide_out_to_top.xml
+* build/intermediates/bundles/release/res/drawable-hdpi-v4/
+* build/intermediates/bundles/release/res/drawable-hdpi-v4/default_ptr_flip.png
+* build/intermediates/bundles/release/res/drawable-hdpi-v4/default_ptr_rotate.png
+* build/intermediates/bundles/release/res/drawable-hdpi-v4/indicator_arrow.png
+* build/intermediates/bundles/release/res/drawable-mdpi-v4/
+* build/intermediates/bundles/release/res/drawable-mdpi-v4/default_ptr_flip.png
+* build/intermediates/bundles/release/res/drawable-mdpi-v4/default_ptr_rotate.png
+* build/intermediates/bundles/release/res/drawable-mdpi-v4/indicator_arrow.png
+* build/intermediates/bundles/release/res/drawable-xhdpi-v4/
+* build/intermediates/bundles/release/res/drawable-xhdpi-v4/default_ptr_flip.png
+* build/intermediates/bundles/release/res/drawable-xhdpi-v4/default_ptr_rotate.png
+* build/intermediates/bundles/release/res/drawable-xhdpi-v4/indicator_arrow.png
+* build/intermediates/bundles/release/res/drawable/
+* build/intermediates/bundles/release/res/drawable/indicator_bg_bottom.xml
+* build/intermediates/bundles/release/res/drawable/indicator_bg_top.xml
+* build/intermediates/bundles/release/res/layout/
+* build/intermediates/bundles/release/res/layout/pull_to_refresh_header_horizontal.xml
+* build/intermediates/bundles/release/res/layout/pull_to_refresh_header_vertical.xml
+* build/intermediates/bundles/release/res/values-ar/
+* build/intermediates/bundles/release/res/values-ar/values.xml
+* build/intermediates/bundles/release/res/values-cs/
+* build/intermediates/bundles/release/res/values-cs/values.xml
+* build/intermediates/bundles/release/res/values-de/
+* build/intermediates/bundles/release/res/values-de/values.xml
+* build/intermediates/bundles/release/res/values-es/
+* build/intermediates/bundles/release/res/values-es/values.xml
+* build/intermediates/bundles/release/res/values-fi/
+* build/intermediates/bundles/release/res/values-fi/values.xml
+* build/intermediates/bundles/release/res/values-fr/
+* build/intermediates/bundles/release/res/values-fr/values.xml
+* build/intermediates/bundles/release/res/values-he/
+* build/intermediates/bundles/release/res/values-he/values.xml
+* build/intermediates/bundles/release/res/values-it/
+* build/intermediates/bundles/release/res/values-it/values.xml
+* build/intermediates/bundles/release/res/values-iw/
+* build/intermediates/bundles/release/res/values-iw/values.xml
+* build/intermediates/bundles/release/res/values-ja/
+* build/intermediates/bundles/release/res/values-ja/values.xml
+* build/intermediates/bundles/release/res/values-ko/
+* build/intermediates/bundles/release/res/values-ko/values.xml
+* build/intermediates/bundles/release/res/values-nl/
+* build/intermediates/bundles/release/res/values-nl/values.xml
+* build/intermediates/bundles/release/res/values-pl/
+* build/intermediates/bundles/release/res/values-pl/values.xml
+* build/intermediates/bundles/release/res/values-pt-rBR/
+* build/intermediates/bundles/release/res/values-pt-rBR/values.xml
+* build/intermediates/bundles/release/res/values-pt/
+* build/intermediates/bundles/release/res/values-pt/values.xml
+* build/intermediates/bundles/release/res/values-ro/
+* build/intermediates/bundles/release/res/values-ro/values.xml
+* build/intermediates/bundles/release/res/values-ru/
+* build/intermediates/bundles/release/res/values-ru/values.xml
+* build/intermediates/bundles/release/res/values-zh/
+* build/intermediates/bundles/release/res/values-zh/values.xml
+* build/intermediates/bundles/release/res/values/
+* build/intermediates/bundles/release/res/values/values.xml
+* build/intermediates/classes/
+* build/intermediates/classes/release/
+* build/intermediates/classes/release/com/
+* build/intermediates/classes/release/com/handmark/
+* build/intermediates/classes/release/com/handmark/pulltorefresh/
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/BuildConfig.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/ILoadingLayout.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/IPullToRefresh.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/LoadingLayoutProxy.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/OverscrollHelper$1.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/OverscrollHelper.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase$1.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshAdapterViewBase.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshBase$1.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshBase$2.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshBase$3.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshBase$4.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshBase$AnimationStyle.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshBase$Mode.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshBase$OnLastItemVisibleListener.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshBase$OnPullEventListener.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshBase$OnRefreshListener.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshBase$OnRefreshListener2.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshBase$OnSmoothScrollFinishedListener.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshBase$Orientation.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshBase$SmoothScrollRunnable.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshBase$State.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshBase.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView$InternalExpandableListView.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView$InternalExpandableListViewSDK9.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshExpandableListView.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshGridView$InternalGridView.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshGridView$InternalGridViewSDK9.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshGridView.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshHorizontalScrollView$InternalHorizontalScrollViewSDK9.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshHorizontalScrollView.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshListView$1.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshListView$InternalListView.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshListView$InternalListViewSDK9.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshListView.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshScrollView$InternalScrollViewSDK9.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshScrollView.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshWebView$1.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshWebView$2.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshWebView$InternalWebViewSDK9.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/PullToRefreshWebView.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/R$anim.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/R$attr.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/R$dimen.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/R$drawable.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/R$id.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/R$layout.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/R$string.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/R$styleable.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/R.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/extras/
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/extras/PullToRefreshWebView2$JsValueCallback.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/extras/PullToRefreshWebView2.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/extras/SoundPullEventListener.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/internal/
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/internal/EmptyViewMethodAccessor.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/internal/FlipLoadingLayout$1.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/internal/FlipLoadingLayout.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/internal/IndicatorLayout$1.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/internal/IndicatorLayout.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/internal/LoadingLayout$1.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/internal/LoadingLayout.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/internal/RotateLoadingLayout.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/internal/Utils.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/internal/ViewCompat$SDK11.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/internal/ViewCompat$SDK16.class
+* build/intermediates/classes/release/com/handmark/pulltorefresh/library/internal/ViewCompat.class
+* build/intermediates/incremental/
+* build/intermediates/incremental/aidl/
+* build/intermediates/incremental/aidl/release/
+* build/intermediates/incremental/aidl/release/dependency.store
+* build/intermediates/incremental/mergeAssets/
+* build/intermediates/incremental/mergeAssets/release/
+* build/intermediates/incremental/mergeAssets/release/merger.xml
+* build/intermediates/incremental/packageResources/
+* build/intermediates/incremental/packageResources/release/
+* build/intermediates/incremental/packageResources/release/merger.xml
+* build/outputs/
+* build/outputs/aar/
+* build/outputs/aar/android-pulltorefresh-lib.aar
+* build/tmp/
+* build/tmp/packageReleaseJar/
+* build/tmp/packageReleaseJar/MANIFEST.MF
+* pom.xml
+From ima-lib-viewpager-indicator:
+* android-viewpager-indicator-lib.iml
+* build.gradle
+* build/
+* build/generated/
+* build/generated/source/
+* build/generated/source/buildConfig/
+* build/generated/source/buildConfig/release/
+* build/generated/source/buildConfig/release/com/
+* build/generated/source/buildConfig/release/com/viewpagerindicator/
+* build/generated/source/buildConfig/release/com/viewpagerindicator/BuildConfig.java
+* build/generated/source/r/
+* build/generated/source/r/release/
+* build/generated/source/r/release/com/
+* build/generated/source/r/release/com/viewpagerindicator/
+* build/generated/source/r/release/com/viewpagerindicator/R.java
+* build/intermediates/
+* build/intermediates/bundles/
+* build/intermediates/bundles/release/
+* build/intermediates/bundles/release/AndroidManifest.xml
+* build/intermediates/bundles/release/R.txt
+* build/intermediates/bundles/release/classes.jar
+* build/intermediates/bundles/release/libs/
+* build/intermediates/bundles/release/libs/android-support-v4.jar
+* build/intermediates/bundles/release/res/
+* build/intermediates/bundles/release/res/color/
+* build/intermediates/bundles/release/res/color/vpi__dark_theme.xml
+* build/intermediates/bundles/release/res/color/vpi__light_theme.xml
+* build/intermediates/bundles/release/res/drawable-hdpi-v4/
+* build/intermediates/bundles/release/res/drawable-hdpi-v4/vpi__tab_selected_focused_holo.9.png
+* build/intermediates/bundles/release/res/drawable-hdpi-v4/vpi__tab_selected_holo.9.png
+* build/intermediates/bundles/release/res/drawable-hdpi-v4/vpi__tab_selected_pressed_holo.9.png
+* build/intermediates/bundles/release/res/drawable-hdpi-v4/vpi__tab_unselected_focused_holo.9.png
+* build/intermediates/bundles/release/res/drawable-hdpi-v4/vpi__tab_unselected_holo.9.png
+* build/intermediates/bundles/release/res/drawable-hdpi-v4/vpi__tab_unselected_pressed_holo.9.png
+* build/intermediates/bundles/release/res/drawable-mdpi-v4/
+* build/intermediates/bundles/release/res/drawable-mdpi-v4/vpi__tab_selected_focused_holo.9.png
+* build/intermediates/bundles/release/res/drawable-mdpi-v4/vpi__tab_selected_holo.9.png
+* build/intermediates/bundles/release/res/drawable-mdpi-v4/vpi__tab_selected_pressed_holo.9.png
+* build/intermediates/bundles/release/res/drawable-mdpi-v4/vpi__tab_unselected_focused_holo.9.png
+* build/intermediates/bundles/release/res/drawable-mdpi-v4/vpi__tab_unselected_holo.9.png
+* build/intermediates/bundles/release/res/drawable-mdpi-v4/vpi__tab_unselected_pressed_holo.9.png
+* build/intermediates/bundles/release/res/drawable-xhdpi-v4/
+* build/intermediates/bundles/release/res/drawable-xhdpi-v4/vpi__tab_selected_focused_holo.9.png
+* build/intermediates/bundles/release/res/drawable-xhdpi-v4/vpi__tab_selected_holo.9.png
+* build/intermediates/bundles/release/res/drawable-xhdpi-v4/vpi__tab_selected_pressed_holo.9.png
+* build/intermediates/bundles/release/res/drawable-xhdpi-v4/vpi__tab_unselected_focused_holo.9.png
+* build/intermediates/bundles/release/res/drawable-xhdpi-v4/vpi__tab_unselected_holo.9.png
+* build/intermediates/bundles/release/res/drawable-xhdpi-v4/vpi__tab_unselected_pressed_holo.9.png
+* build/intermediates/bundles/release/res/drawable/
+* build/intermediates/bundles/release/res/drawable/vpi__tab_indicator.xml
+* build/intermediates/bundles/release/res/values/
+* build/intermediates/bundles/release/res/values/values.xml
+* build/intermediates/classes/
+* build/intermediates/classes/release/
+* build/intermediates/classes/release/com/
+* build/intermediates/classes/release/com/viewpagerindicator/
+* build/intermediates/classes/release/com/viewpagerindicator/BuildConfig.class
+* build/intermediates/classes/release/com/viewpagerindicator/CirclePageIndicator$1.class
+* build/intermediates/classes/release/com/viewpagerindicator/CirclePageIndicator$SavedState$1.class
+* build/intermediates/classes/release/com/viewpagerindicator/CirclePageIndicator$SavedState.class
+* build/intermediates/classes/release/com/viewpagerindicator/CirclePageIndicator.class
+* build/intermediates/classes/release/com/viewpagerindicator/IconPageIndicator$1.class
+* build/intermediates/classes/release/com/viewpagerindicator/IconPageIndicator.class
+* build/intermediates/classes/release/com/viewpagerindicator/IconPagerAdapter.class
+* build/intermediates/classes/release/com/viewpagerindicator/IcsLinearLayout.class
+* build/intermediates/classes/release/com/viewpagerindicator/LinePageIndicator$1.class
+* build/intermediates/classes/release/com/viewpagerindicator/LinePageIndicator$SavedState$1.class
+* build/intermediates/classes/release/com/viewpagerindicator/LinePageIndicator$SavedState.class
+* build/intermediates/classes/release/com/viewpagerindicator/LinePageIndicator.class
+* build/intermediates/classes/release/com/viewpagerindicator/PageIndicator.class
+* build/intermediates/classes/release/com/viewpagerindicator/R$attr.class
+* build/intermediates/classes/release/com/viewpagerindicator/R$bool.class
+* build/intermediates/classes/release/com/viewpagerindicator/R$color.class
+* build/intermediates/classes/release/com/viewpagerindicator/R$dimen.class
+* build/intermediates/classes/release/com/viewpagerindicator/R$drawable.class
+* build/intermediates/classes/release/com/viewpagerindicator/R$id.class
+* build/intermediates/classes/release/com/viewpagerindicator/R$integer.class
+* build/intermediates/classes/release/com/viewpagerindicator/R$style.class
+* build/intermediates/classes/release/com/viewpagerindicator/R$styleable.class
+* build/intermediates/classes/release/com/viewpagerindicator/R.class
+* build/intermediates/classes/release/com/viewpagerindicator/TabPageIndicator$1.class
+* build/intermediates/classes/release/com/viewpagerindicator/TabPageIndicator$2.class
+* build/intermediates/classes/release/com/viewpagerindicator/TabPageIndicator$OnTabReselectedListener.class
+* build/intermediates/classes/release/com/viewpagerindicator/TabPageIndicator$TabView.class
+* build/intermediates/classes/release/com/viewpagerindicator/TabPageIndicator.class
+* build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$1.class
+* build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$IndicatorStyle.class
+* build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$LinePosition.class
+* build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$OnCenterItemClickListener.class
+* build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$SavedState$1.class
+* build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator$SavedState.class
+* build/intermediates/classes/release/com/viewpagerindicator/TitlePageIndicator.class
+* build/intermediates/classes/release/com/viewpagerindicator/UnderlinePageIndicator$1.class
+* build/intermediates/classes/release/com/viewpagerindicator/UnderlinePageIndicator$2.class
+* build/intermediates/classes/release/com/viewpagerindicator/UnderlinePageIndicator$SavedState$1.class
+* build/intermediates/classes/release/com/viewpagerindicator/UnderlinePageIndicator$SavedState.class
+* build/intermediates/classes/release/com/viewpagerindicator/UnderlinePageIndicator.class
+* build/intermediates/incremental/
+* build/intermediates/incremental/aidl/
+* build/intermediates/incremental/aidl/release/
+* build/intermediates/incremental/aidl/release/dependency.store
+* build/intermediates/incremental/mergeAssets/
+* build/intermediates/incremental/mergeAssets/release/
+* build/intermediates/incremental/mergeAssets/release/merger.xml
+* build/intermediates/incremental/packageResources/
+* build/intermediates/incremental/packageResources/release/
+* build/intermediates/incremental/packageResources/release/merger.xml
+* build/outputs/
+* build/outputs/aar/
+* build/outputs/aar/android-viewpager-indicator-lib.aar
+* build/tmp/
+* build/tmp/packageReleaseJar/
+* build/tmp/packageReleaseJar/MANIFEST.MF
+* pom.xml
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.+
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:19.+
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+ima-lib-appcompat-v7 => [com.android.support:appcompat-v7:19.+]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In ima-lib-pulltorefresh:
+* AndroidManifest.xml => imalibpulltorefresh/src/main/AndroidManifest.xml
+* res/ => imalibpulltorefresh/src/main/res/
+* src/ => imalibpulltorefresh/src/main/java/
+In ima-lib-viewpager-indicator:
+* AndroidManifest.xml => imalibviewpagerindicator/src/main/AndroidManifest.xml
+* res/ => imalibviewpagerindicator/src/main/res/
+* src/ => imalibviewpagerindicator/src/main/java/
+In Zzq:
+* AndroidManifest.xml => zzq/src/main/AndroidManifest.xml
+* assets/ => zzq/src/main/assets/
+* libs/universal-image-loader-1.9.3.jar => zzq/libs/universal-image-loader-1.9.3.jar
+* res/ => zzq/src/main/res/
+* src/ => zzq/src/main/java/
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
