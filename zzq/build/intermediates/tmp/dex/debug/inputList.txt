@@ -1,0 +1,8 @@
+/Users/antikvo/AndroidStudioProjects/zzq/build/intermediates/classes/debug
+/Users/antikvo/AndroidStudioProjects/zzq/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-21a0715b8577336a0e8e37498764fa6279159633.jar
+/Users/antikvo/AndroidStudioProjects/zzq/build/intermediates/pre-dexed/debug/classes-4ef07c79937ba2a4bdc5108e4f2086e09350ab84.jar
+/Users/antikvo/AndroidStudioProjects/zzq/build/intermediates/pre-dexed/debug/classes-1a3af9dcb7fd476e182659e0ba91a41b9c1f2fb6.jar
+/Users/antikvo/AndroidStudioProjects/zzq/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-96f920d82a8b313ed4eed474b8965cc179be72f6.jar
+/Users/antikvo/AndroidStudioProjects/zzq/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.3-d63224064207ebcb0cb8fe4fd3e562794079b04e.jar
+/Users/antikvo/AndroidStudioProjects/zzq/build/intermediates/pre-dexed/debug/classes-f8702dcb45e84c42b89995f868b22b1a23c2bad3.jar
+/Users/antikvo/AndroidStudioProjects/zzq/build/intermediates/pre-dexed/debug/classes-05c90c9452b1365a8c4fb974b2a1a45843b401d4.jar
