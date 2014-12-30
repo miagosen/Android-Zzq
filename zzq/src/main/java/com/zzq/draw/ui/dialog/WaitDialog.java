@@ -2,7 +2,6 @@ package com.zzq.draw.ui.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,7 +27,7 @@ public class WaitDialog extends Dialog {
 		init(context);
 	}
 
-	protected WaitDialog(Context context, boolean cancelable,DialogInterface.OnCancelListener listener) {
+	protected WaitDialog(Context context, boolean cancelable,OnCancelListener listener) {
 		super(context, cancelable, listener);
 		init(context);
 	}

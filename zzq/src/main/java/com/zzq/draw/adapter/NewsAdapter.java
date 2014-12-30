@@ -4,7 +4,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.zzq.draw.KeTuKeLeApplication;
 import com.zzq.draw.R;
 import com.zzq.draw.base.ListBaseAdapter;
 
@@ -27,7 +26,7 @@ public class NewsAdapter extends ListBaseAdapter{
         } else {
             vh = (ViewHolder) convertView.getTag();
         }
-        vh.iconView.setImageDrawable(parent.getResources().getDrawable(R.drawable.a));
+//        vh.iconView.setImageDrawable(parent.getResources().getDrawable(R.drawable.));
         return convertView;
     }
     class ViewHolder{

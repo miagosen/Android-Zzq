@@ -2,17 +2,19 @@ package com.zzq.draw.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentTabHost;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 
 import com.viewpagerindicator.TabPageIndicator;
 import com.zzq.draw.R;
+import com.zzq.draw.base.BaseActivity;
 import com.zzq.draw.fragment.NewsFragment;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends BaseActivity {
+    private FragmentTabHost mTabHost;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +47,8 @@ public class MainActivity extends FragmentActivity {
 
   }
 
-  class TabPageIndicatorAdapter extends FragmentPagerAdapter {
+
+    class TabPageIndicatorAdapter extends FragmentPagerAdapter {
     public TabPageIndicatorAdapter(FragmentManager fm) {
       super(fm);
     }

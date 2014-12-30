@@ -21,6 +21,6 @@ android {
 dependencies {
     compile project(':imalibpulltorefresh')
     compile project(':imalibviewpagerindicator')
-    compile project(':android-compat-v7-lib')
+    compile 'com.android.support:appcompat-v7:20.0.+'
     compile files('libs/universal-image-loader-1.9.3.jar')
 }

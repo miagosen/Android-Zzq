@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.zzq.draw.R;
 
+
 public class DialogAdapter extends BaseAdapter {
 
 	private CharSequence[] _items;

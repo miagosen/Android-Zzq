@@ -6,9 +6,9 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="15" />
     <application
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/icon"
        android:name="com.zzq.draw.KeTuKeLeApplication"
-       android:theme="@style/ZzqActionBarBaseTheme" 
+       android:theme="@style/ActionBarBaseTheme"
        >
         <activity
             android:name="com.zzq.draw.activity.MainActivity"

@@ -9,7 +9,7 @@
         android:id="@+id/btn_back"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="@drawable/titlebar_item_background_selector"
+        android:background="@drawable/umeng_socialize_titlebar_item_background_selector"
         android:contentDescription="@null"
         android:paddingLeft="@dimen/space_8"
         android:paddingRight="@dimen/space_8"
@@ -32,5 +32,16 @@
         android:textColor="@color/white"
         android:textSize="@dimen/text_size_18" />
 
+    <TextView
+        android:id="@+id/tv_comment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/space_8"
+        android:background="@drawable/btn_actionbar_commentcount_selector"
+        android:clickable="true"
+        android:text="@string/comment_count"
+        android:textColor="@color/main_black"
+        android:textSize="@dimen/text_size_12"
+        android:visibility="gone" />
 
 </LinearLayout>

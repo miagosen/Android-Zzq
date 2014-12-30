@@ -25,12 +25,13 @@ import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.zzq.draw.KeTuKeLeApplication;
 import com.zzq.draw.R;
+import com.zzq.draw.base.BaseApplication;
 import com.zzq.draw.utils.TDevice;
 
+
 public class CommonDialog extends Dialog {
-	public DialogInterface.OnClickListener listener;
+	public OnClickListener listener;
 	protected View barDivider;
 	protected View buttonDivider;
 	protected FrameLayout container;
@@ -40,7 +41,7 @@ public class CommonDialog extends Dialog {
 	protected DialogTitleView headerVw;
 	protected Button negativeBt;
 	protected Button positiveBt;
-	protected DialogInterface.OnClickListener dismissClick = new OnClickListener() {
+	protected OnClickListener dismissClick = new OnClickListener() {
 
 		@Override
 		public void onClick(DialogInterface dialog, int which) {
@@ -63,7 +64,7 @@ public class CommonDialog extends Dialog {
 	}
 
 	protected CommonDialog(Context context, boolean flag,
-			DialogInterface.OnCancelListener listener) {
+			OnCancelListener listener) {
 		super(context, flag, listener);
 		contentPadding = (int) getContext().getResources().getDimension(
 				R.dimen.global_dialog_padding);
@@ -95,7 +96,7 @@ public class CommonDialog extends Dialog {
 						int oldRight, int oldBottom) {
 					int height = v.getHeight();
 					int contentHeight = container.getHeight();
-					int winHeight = KeTuKeLeApplication.getDisplaySize()[1];
+					int winHeight = BaseApplication.getDisplaySize()[1];
 					int needHeight = height - winHeight * 8 / 10;
 					if (needHeight > 0) {
 						container
@@ -151,7 +152,7 @@ public class CommonDialog extends Dialog {
 
 	@Override
 	public void setContentView(View view,
-			android.view.ViewGroup.LayoutParams layoutparams) {
+			LayoutParams layoutparams) {
 		throw new Error("Dialog: User setContent (View view) instead!");
 	}
 
@@ -232,12 +233,12 @@ public class CommonDialog extends Dialog {
 	}
 
 	public void setNegativeButton(int negative,
-			DialogInterface.OnClickListener listener) {
+			OnClickListener listener) {
 		setNegativeButton(getContext().getString(negative), listener);
 	}
 
 	public void setNegativeButton(String text,
-			final DialogInterface.OnClickListener listener) {
+			final OnClickListener listener) {
 		if (!TextUtils.isEmpty(text)) {
 			negativeBt.setText(text);
 			negativeBt.setOnClickListener(new View.OnClickListener() {
@@ -265,12 +266,12 @@ public class CommonDialog extends Dialog {
 	}
 
 	public void setPositiveButton(int positive,
-			DialogInterface.OnClickListener listener) {
+			OnClickListener listener) {
 		setPositiveButton(getContext().getString(positive), listener);
 	}
 
 	public void setPositiveButton(String positive,
-			final DialogInterface.OnClickListener listener) {
+			final OnClickListener listener) {
 		if (!TextUtils.isEmpty(positive)) {
 			positiveBt.setText(positive);
 			positiveBt.setOnClickListener(new View.OnClickListener() {

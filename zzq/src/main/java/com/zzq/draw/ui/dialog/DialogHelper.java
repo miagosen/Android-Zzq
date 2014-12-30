@@ -5,6 +5,7 @@ import android.content.Context;
 
 import com.zzq.draw.R;
 
+
 public class DialogHelper {
 	
 	public static CommonDialog getPinterestDialog(Context context) {

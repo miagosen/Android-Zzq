@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.zzq.draw.R;
 
+
 public class DialogTitleView extends FrameLayout {
 
 	public static final int MODE_REGULAR = 0;
@@ -72,7 +73,7 @@ public class DialogTitleView extends FrameLayout {
 //	}
 
 	public void addAction(View view,
-			android.view.View.OnClickListener listener) {
+			OnClickListener listener) {
 		view.setOnClickListener(listener);
 		buttonWell.addView(view);
 	}
