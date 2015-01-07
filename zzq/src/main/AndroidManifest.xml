@@ -4,7 +4,8 @@
     android:versionName="1.0" >
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="15" />
+        android:targetSdkVersion="16" />
+
     <application
         android:icon="@drawable/icon"
        android:name="com.zzq.draw.KeTuKeLeApplication"
@@ -19,6 +20,13 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <!-- 去登录页面Activity -->
+        <activity
+            android:name="com.zzq.draw.activity.login.LoginActivity"
+            android:label="@string/login">
+
         </activity>
     </application>
 
