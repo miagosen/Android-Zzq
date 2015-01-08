@@ -91,7 +91,8 @@
     <string name="from_iphone">来自:Iphone</string>
     <string name="from_windows_phone">来自:Windows Phone</string>
     <string name="from_wechat">来自:微信</string>
-    
+
+    <string name="welcome_word">欢迎您:</string>
     <string name="unlogin">未登录</string>
     <string name="unlogin_tip">您还未登录\r\n点击屏幕登录</string>
     <string name="hint_username">输入账号/邮箱</string>
@@ -303,4 +304,9 @@
     <string name="fragment_title_events">活动</string>
     <string name="empty" />
 
+    <!-- dialog -->
+    <string name="logoff_dialog_title">注销用户</string>
+    <string name="logoff_dialog_message">您确定要注销当前登录信息吗？</string>
+    <string name="logff_user">注销</string>
+    <string name="logoff_close">取消</string>
 </resources>
