@@ -27,7 +27,7 @@ public enum ActiveTab {
     }
     return "";
   }
-  private static ActiveTab getActiveTab(int index) {
+  public static ActiveTab getActiveTab(int index) {
     ActiveTab result = null;
     if (index >= 0 && index < values().length) {
       for (ActiveTab tab : values()) {

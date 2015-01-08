@@ -2102,6 +2102,7 @@ containing a value of this type.
         public static final int pageerrLayout=0x7f0a012b;
         public static final int pager=0x7f0a0054;
         public static final int photoview=0x7f0a00f8;
+        public static final int plv_news=0x7f0a0055;
         public static final int pop_layout=0x7f0a012f;
         public static final int positive_bt=0x7f0a0092;
         public static final int progress=0x7f0a00f9;
@@ -2162,7 +2163,6 @@ containing a value of this type.
         public static final int tb_notification_disable_when_exit=0x7f0a00c4;
         public static final int tb_notification_sound=0x7f0a00c3;
         public static final int text=0x7f0a010b;
-        public static final int textview=0x7f0a0055;
         public static final int title=0x7f0a0042;
         public static final int title_divder=0x7f0a012a;
         public static final int title_tv=0x7f0a0107;

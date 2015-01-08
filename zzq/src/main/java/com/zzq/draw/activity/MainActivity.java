@@ -11,7 +11,6 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import com.viewpagerindicator.TabPageIndicator;
 import com.zzq.draw.R;
 import com.zzq.draw.base.BaseActivity;
-import com.zzq.draw.fragment.NewsFragment;
 
 public class MainActivity extends BaseActivity {
     private FragmentTabHost mTabHost;
@@ -55,10 +54,17 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public Fragment getItem(int position) {
-      Fragment fragment = new NewsFragment();
-      Bundle args = new Bundle();
-      args.putString("arg", ActiveTab.getTitleByIndex(position));
-      fragment.setArguments(args);
+        Fragment fragment = null;
+        try {
+            fragment = (Fragment)ActiveTab.getActiveTab(position).getClz().newInstance();
+            Bundle args = new Bundle();
+            args.putString("arg", ActiveTab.getTitleByIndex(position));
+            fragment.setArguments(args);
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        }
       return fragment;
     }
 

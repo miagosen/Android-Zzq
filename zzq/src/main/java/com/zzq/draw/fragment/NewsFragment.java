@@ -1,33 +1,54 @@
 package com.zzq.draw.fragment;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
+import com.handmark.pulltorefresh.library.PullToRefreshListView;
 import com.zzq.draw.R;
 import com.zzq.draw.adapter.NewsAdapter;
-import com.zzq.draw.base.ListBaseAdapter;
+import com.zzq.draw.base.BaseFragment;
 
-public class NewsFragment extends Fragment {
+public class NewsFragment extends BaseFragment {
 
-  @Override
-  public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-    View contextView = inflater.inflate(R.layout.fragment_item, container, false);
-    TextView mTextView = (TextView) contextView.findViewById(R.id.textview);
-
-    Bundle mBundle = getArguments();
-    String title = mBundle.getString("arg");
-
-    mTextView.setText(title);
-    return contextView;
-  }
+    private PullToRefreshListView pullToRefreshListView;
+    private NewsAdapter newsAdapter;
 
     @Override
-  public void onActivityCreated(Bundle savedInstanceState) {
-    super.onActivityCreated(savedInstanceState);
-  }
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View contextView = inflater.inflate(R.layout.fragment_item, container, false);
+        pullToRefreshListView = (PullToRefreshListView) contextView.findViewById(R.id.plv_news);
+        return contextView;
+    }
+
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            showWaitDialog();
+            loadData();
+        }
+    }
+
+    private void loadData() {
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                hideWaitDialog();
+            }
+        }, 1000);
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+    }
 
 }
